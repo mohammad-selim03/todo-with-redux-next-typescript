@@ -24,7 +24,8 @@ const Input = () => {
 
   return (
     <div className="bg-gradient-to-r from-cyan-50 via-red-50 to-cyan-200 h-screen w-full flex flex-col justify-center items-center">
-      <div className="bg-blue-800 rounded-md w-[500px] h-96 py-10 flex flex-col items-center justify-center ">
+        <h2 className="text-xl font-semibold text-center bg-gradient-to-l from-cyan-500 to-blue-900 px-10 py-3 rounded-t-full text-white ">Todo Web APP</h2>
+      <div className="bg-gradient-to-r from-cyan-600 to-blue-900 rounded-md w-[500px] h-96 py-10 flex flex-col items-center justify-center ">
         <form onClick={handleAdd} className=" flex items-center justify-center">
           <input
             type="text"
@@ -39,8 +40,8 @@ const Input = () => {
           <button className="text-white font-semibold ml-2 flex items-center gap-1"><FaPlus size={18}/> Add</button>
         </form>
       <DisplayTodo />
-      <p className="text-md text-semibold">Created By <a href="https://www.facebook.com/nilll0111" target="_blank">MOHAMMAD SELIM</a></p>
       </div>
+      <p className="text-xs font-bold text-blue-900 mt-10 ">Created By <a href="https://www.facebook.com/nilll0111" target="_blank"><span className="text-sm underline">MOHAMMAD SELIM</span></a></p>
     </div>
   );
 };
