@@ -1,11 +1,14 @@
-// export interface todoState {
-//     value: []
-// }
+
 import { createSlice, PayloadAction } from "@reduxjs/toolkit"
-// import { Todo } from "../../../type"
+
+interface Todo{
+    _id:string,
+    text:string,
+    completed:boolean;
+}
 
 const initialState = {
-    todo:[],
+    todo:[] as Todo[],
 
     
 }

@@ -24,7 +24,7 @@ const DisplayTodo = () => {
     <div className="flex flex-col gap-4 p-4 mt-2 border border-gray-500 rounded-md w-full px-10 overflow-auto">
       <div className="">
         <h2 className="text-lg font-semibold">
-          {todo?.map((tod) => (
+          {todo?.map((tod:any) => (
             <li key={tod?._id} className="flex items-center justify-between bg-slate-100 mt-5 px-4 py-3 rounded-md gap-10 ">
               {tod?.todo}{" "}
               <span className="text-md ml-2 text-red-500 cursor-pointer">
