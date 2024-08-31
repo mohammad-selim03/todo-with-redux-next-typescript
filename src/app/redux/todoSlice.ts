@@ -14,7 +14,7 @@ export const todoSlice = createSlice({
     name:'todoo',
     initialState,
     reducers:{
-        addTodo:(state, action: PayloadAction<Todo>) => {
+        addTodo:(state, action) => {
             state.todo.push(action.payload)
             // state.userInfo = action.payload
         },
