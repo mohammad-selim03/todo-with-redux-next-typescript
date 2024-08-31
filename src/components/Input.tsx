@@ -39,6 +39,7 @@ const Input = () => {
           <button className="text-white font-semibold ml-2 flex items-center gap-1"><FaPlus size={18}/> Add</button>
         </form>
       <DisplayTodo />
+      <p className="text-md text-semibold">Created By <a href="https://www.facebook.com/nilll0111" target="_blank">MOHAMMAD SELIM</a></p>
       </div>
     </div>
   );
