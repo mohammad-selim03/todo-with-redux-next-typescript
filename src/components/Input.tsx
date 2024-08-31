@@ -7,6 +7,7 @@ import DisplayTodo from "./DisplayTodo";
 
 const Input = () => {
   const [todo, setTodo] = useState("");
+  const [searchValue, setSearchValue] = useState("")
   const dispatch = useDispatch();
 
   const handleAdd = (e: any) => {
@@ -21,20 +22,23 @@ const Input = () => {
   };
 
   return (
-    <div className="flex w-full max-h-screen justify-center items-center">
-      <div className="flex items-center justify-center w-96 h-screen bg-gray-600">
-        <form onClick={handleAdd}>
+    <div className="bg-gradient-to-r from-cyan-50 via-red-50 to-cyan-200 h-screen w-full flex flex-col justify-center items-center">
+      <div className="bg-blue-500 rounded-md w-[500px] h-96 py-10 flex flex-col items-center justify-center ">
+        <form onClick={handleAdd} className=" flex items-center justify-center">
           <input
             type="text"
             placeholder="Enter todo..."
-            className="h-10 rounded-md px-5"
-            onChange={(e) => setTodo(e.target.value)}
+            className="h-10 rounded-md px-8 outline-none"
+            onChange={(e) => {
+                setTodo(e.target.value)
+                setSearchValue(e.target.value)
+            }}
             value={todo}
           />
           <button className="text-white font-semibold ml-2">Add</button>
         </form>
-      </div>
       <DisplayTodo />
+      </div>
     </div>
   );
 };
