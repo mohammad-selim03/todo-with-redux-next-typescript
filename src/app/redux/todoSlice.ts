@@ -2,7 +2,7 @@
 //     value: []
 // }
 import { createSlice, PayloadAction } from "@reduxjs/toolkit"
-import { Todo } from "../../../type"
+// import { Todo } from "../../../type"
 
 const initialState = {
     todo:[],
